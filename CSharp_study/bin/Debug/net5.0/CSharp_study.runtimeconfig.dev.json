@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/semanticist/.dotnet/store/|arch|/|tfm|",
+      "/Users/semanticist/.nuget/packages"
+    ]
+  }
+}
