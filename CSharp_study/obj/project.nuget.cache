@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nfx1kQ46LfXZMN4WXiPdJLvSR04hUlcXoTTR4KugS6NkM6TiQjcpQlUHTdm9d7VOBsaF+xTiL4TF/q4S6jPv3w==",
+  "dgSpecHash": "wC+XE6NQnS/Zpynqs5Dc53kTwqRjehguZePidqMjIig8C2kLWx863Kpp4PKuSnZdGUvl3aNcSToP6gdz3pX1og==",
   "success": true,
   "projectFilePath": "/Users/semanticist/github/semanticist14/studyFolder/CSharp_study/CSharp_study.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/semanticist/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }
