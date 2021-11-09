@@ -1,21 +1,15 @@
 import numpy as np
+import pandas as pd
+from pandas.core.indexes.base import InvalidIndexError
 
-v1 = np.arange(0,6)
-arr = [ 2, 3 ]
-v2 = np.reshape(v1, arr)
+data = pd.read_csv('./data2/Ex_CEOSalary.csv', encoding='utf-8')
 
-# v3 = np.dot(v2, v2)
-v4 = np.multiply(v2, v2)
+print(data['industry'].value_counts())
 
-print(v2)
-print(v4)
 
-v5 = np.arange(0,9)
-v6 = np.reshape(v5, [3,3])
+data['industry']= data['industry'].replace([1,2,3,4], ['Service', 'IT', 'Finance', 'Others'])
 
-v7 = np.dot(v6,v6)
+print(data['industry'].value_counts())
+print(data['industry'])
 
-print(v6)
-print(v7)
-print(v7)
-print(v7)
+data['industry'].value_counts().plot(kind='bar')
