@@ -65,3 +65,14 @@ score2 = model2.score(test, gender)
 print(score)
 print(score2)
 
+print(x.duplicated())
+
+from sklearn.preprocessing import LabelEncoder
+encoder = LabelEncoder()
+
+# x = encoder.fit_transform(x)
+print(x)
+
+x.fillna({x['column'] : x['column'].mean()}, inplace = True)
+
+x = get_dummies(x)

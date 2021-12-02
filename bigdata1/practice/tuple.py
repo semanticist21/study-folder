@@ -1,6 +1,6 @@
 name =( "David", "Kim")
 
-firstName, lastName = name;
+firstName, lastName = name
 
 print (firstName, lastName)
 
