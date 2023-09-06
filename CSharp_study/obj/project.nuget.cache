@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "wC+XE6NQnS/Zpynqs5Dc53kTwqRjehguZePidqMjIig8C2kLWx863Kpp4PKuSnZdGUvl3aNcSToP6gdz3pX1og==",
+  "dgSpecHash": "A47fRFmld7Lnu3wLBuy8B4Q0oeEy2CMBgAVsCw06E382qeB3Y2cfGxN4lZOaw2yjpwU9ZhRiz0K98chXPiGO8w==",
   "success": true,
-  "projectFilePath": "/Users/semanticist/github/semanticist14/studyFolder/CSharp_study/CSharp_study.csproj",
+  "projectFilePath": "/Users/semanticist/Documents/code/others/study/CSharp_study/CSharp_study.csproj",
   "expectedPackageFiles": [
-    "/Users/semanticist/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512"
+    "/Users/semanticist/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512",
+    "/Users/semanticist/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "/Users/semanticist/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "/Users/semanticist/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.17/microsoft.netcore.app.host.osx-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }
