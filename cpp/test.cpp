@@ -34,7 +34,6 @@ int main()
     {
         // cout << val;
         // ++val;
-        val++;
     }
 
     cout << "main score : " << score << endl;
