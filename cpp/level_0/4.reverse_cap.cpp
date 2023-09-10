@@ -23,4 +23,6 @@ int main(void)
   }
 
   cout << word << endl;
+
+  return 0;
 }
