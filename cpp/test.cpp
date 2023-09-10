@@ -1,4 +1,5 @@
 #include <iostream>
+
 namespace A_RANGE
 {
     int score = 100;
