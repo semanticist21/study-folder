@@ -49,7 +49,9 @@
     "array": "cpp",
     "string_view": "cpp",
     "unordered_map": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "map": "cpp",
+    "numbers": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
