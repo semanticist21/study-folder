@@ -5,53 +5,53 @@
 
 using namespace std;
 
-bool is_valid(char c)
-{
-    bool is_valid_special = c == '-' || c == '_' || c == '.';
-    bool is_valid_number = c >= '0' && c <= '9';
-
-    return is_valid_special || is_valid_number;
-}
-
 string solution(string new_id)
 {
-    transform(new_id.begin(), new_id.end(), new_id.begin(), [](unsigned char c)
-              { return tolower(c); });
+    transform(new_id.begin(), new_id.end(), new_id.begin(), ::tolower);
 
-    new_id.erase(remove_if(new_id.begin(), new_id.end(), [](unsigned char c)
-                           { return !is_valid(c); }));
+    auto check_lambda = [](char c)
+    {
+        bool is_char = (c >= 'a' && c <= 'z');
+        bool is_num = (c >= '0' && c <= '9');
+        bool is_special = (c == '-' || c == '_' || c == '.');
 
-    new_id.replace(new_id.begin(), new_id.end(), "..", ".");
+        return !(is_char || is_num || is_special);
+    };
 
-    if (new_id[0] == '.')
+    auto remove_iter = remove_if(new_id.begin(), new_id.end(), check_lambda);
+    new_id.erase(remove_iter, new_id.end());
+
+    while (new_id.find("..") != string::npos)
+    {
+        size_t pos = new_id.find("..");
+        new_id.replace(pos, 2, ".");
+    }
+
+    if (!new_id.empty() && new_id.front() == '.')
     {
         new_id.erase(new_id.begin());
     }
 
-    if (new_id[new_id.size() - 1] == '.')
+    if (!new_id.empty() && new_id.back() == '.')
     {
-        new_id.erase(new_id.end());
+        new_id.pop_back();
     }
 
-    if (new_id == "")
+    if (new_id.empty())
     {
         new_id = "a";
     }
 
-    if (new_id.size() >= 16)
+    if (new_id.length() >= 16)
     {
-        new_id.erase(new_id.begin() + 15, new_id.end());
+        new_id = new_id.substr(0, 15);
+        new_id = new_id.back() == '.' ? new_id.substr(0, 14) : new_id;
     }
 
-    if (new_id[new_id.size() - 1] == '.')
+    if (new_id.length() <= 2)
     {
-        new_id.erase(new_id.end());
-    }
-
-    if (new_id.size() <= 2)
-    {
-        int gap = 3 - new_id.size();
-        new_id += string(gap, new_id[new_id.size() - 1]);
+        int gap = 3 - new_id.length();
+        new_id += string(gap, new_id.back());
     }
 
     return new_id;
@@ -59,7 +59,7 @@ string solution(string new_id)
 
 int main()
 {
-    string result = solution("asdadasdassd");
+    string result = solution("...!@BaT#*..y.abcdefghijklm");
     cout << result << endl;
     return 0;
 }
