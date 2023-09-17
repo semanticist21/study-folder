@@ -7,57 +7,48 @@ using namespace std;
 
 vector<int> solution(vector<int> sequence, int k)
 {
-  int start = 0;
-  int end = sequence.size() - 1;
+  int s = 0;
+  int e = 0;
 
-  auto f = find(sequence.begin(), sequence.end(), k);
+  int f_s = 0;
+  int f_e = sequence.size();
+  int size = sequence.size();
 
-  if (f != sequence.end())
-  {
-    int addr = f - sequence.begin();
-    return {addr, addr};
-  }
-
+  int sum = sequence[0];
   while (true)
   {
-    int v = 0;
-
-    for (int i = start; i <= end; i++)
+    if (sum < k)
     {
-      v += sequence[i];
+      if (e < size - 1)
+        sum += sequence[++e];
+      else
+        break;
     }
 
-    if (v == k)
-      break;
+    if (sum > k)
+      sum -= sequence[s++];
 
-    int gap = v - k;
-
-    if (gap == sequence[end])
+    if (sum == k)
     {
-      --end;
-      break;
-    }
-    else if (gap == sequence[start])
-    {
-      ++start;
-      break;
-    }
+      if (e - s < f_e - f_s)
+      {
+        f_s = s;
+        f_e = e;
+      }
 
-    if (gap > sequence[end])
-      --end;
-    else
-      ++start;
+      sum -= sequence[s++];
+    }
   }
 
-  return {start, end};
+  return {f_s, f_e};
 }
 
 int main()
 {
-  auto result = solution({1, 1, 1, 2, 3, 4, 5}, 5);
-  for (const int v : result)
+  vector<int> result = solution({1, 2, 3, 4, 5}, 7);
+  for (const int &i : result)
   {
-    cout << v << endl;
+    cout << i << endl;
   }
 
   return 0;
