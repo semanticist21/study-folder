@@ -13,7 +13,7 @@ vector<string> solution(vector<vector<string>> plans)
     for (const auto &plan : plans)
     {
         string hour = plan[1].substr(0, 2);
-        string min = plan[1].substr(3, 4);
+        string min = plan[1].substr(3, 2);
 
         vector<string> cvt_plan = {
             plan[0],
