@@ -1,5 +1,4 @@
-  // while (remnants.size())
-    // {
-    //     completed.push_back(remnants.back());
-    //     remnants.pop_back();
-    // }
+for (const string &str : last_item)
+                {
+                    cout << last_item << endl;
+                
