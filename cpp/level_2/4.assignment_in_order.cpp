@@ -30,6 +30,7 @@ vector<string> solution(vector<vector<string>> plans)
     };
 
     sort(plans_.begin(), plans_.end(), compare);
+    // string의 경우 그대로 비교해도 되긴 한다.
 
     vector<vector<string>> remnants;
     vector<string> completed;
