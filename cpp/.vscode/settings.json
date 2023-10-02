@@ -51,7 +51,8 @@
     "unordered_map": "cpp",
     "vector": "cpp",
     "map": "cpp",
-    "numbers": "cpp"
+    "numbers": "cpp",
+    "algorithm": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

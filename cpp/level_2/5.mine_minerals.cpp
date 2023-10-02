@@ -5,6 +5,7 @@
 #include <limits>
 #include <cmath>
 #include <map>
+#include <unordered_map>
 
 using namespace std;
 
@@ -86,12 +87,48 @@ int solution(vector<int> picks, vector<string> minerals)
     return cost;
 }
 
+// other solution
+unordered_map<string, int> dic[3] = {
+    {{"diamond", 1}, {"iron", 1}, {"stone", 1}},
+    {{"diamond", 5}, {"iron", 1}, {"stone", 1}},
+    {{"diamond", 25}, {"iron", 5}, {"stone", 1}}};
+
+int solution_(vector<int> picks, vector<string> minerals)
+{
+    auto calc = [&](int idx, int tool) -> int
+    {
+        int ret = 0;
+        for (int i = 0; i < 5 && idx + i < minerals.size(); ++i)
+            ret += dic[tool][minerals[idx + i]];
+
+        return ret;
+    };
+
+    auto go = [&](auto &self, int a, int b, int c, int idx = 0) -> int
+    {
+        if (a + b + c == 0 || idx >= minerals.size())
+            return 0;
+
+        int ret = 0x7fffffff;
+        if (a)
+            ret = min(ret, calc(idx, 0) + self(self, a - 1, b, c, idx + 5));
+        if (b)
+            ret = min(ret, calc(idx, 1) + self(self, a, b - 1, c, idx + 5));
+        if (c)
+            ret = min(ret, calc(idx, 2) + self(self, a, b, c - 1, idx + 5));
+
+        return ret;
+    };
+
+    return go(go, picks[0], picks[1], picks[2]);
+}
+
 int main()
 {
     vector<int> picks = {1, 3, 2};
     vector<string> minerals = {"diamond", "diamond", "diamond", "iron", "iron", "diamond", "iron", "stone"};
 
-    int min = solution(picks, minerals);
+    int min = solution_(picks, minerals);
     cout << min << endl;
 
     return 0;
