@@ -52,7 +52,12 @@
     "vector": "cpp",
     "map": "cpp",
     "numbers": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "numeric": "cpp",
+    "list": "cpp",
+    "xhash": "cpp",
+    "xtree": "cpp",
+    "sstream": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
