@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 
 // 유클리드 호제법
-int gcd(int x, int y) { return x % y == 0 ? y : gcd(x, x % y); }
+int gcd(int x, int y) { return x % y == 0 ? y : gcd(y, x % y); }
 int lcm(int x, int y) { return x * y / gcd(x, y); }
 
 int solution(vector<int> arr)
