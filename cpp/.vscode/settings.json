@@ -59,7 +59,8 @@
     "xtree": "cpp",
     "sstream": "cpp",
     "unordered_set": "cpp",
-    "regex": "cpp"
+    "regex": "cpp",
+    "stack": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
