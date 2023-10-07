@@ -45,6 +45,7 @@ vector<int> solution(int N, vector<int> stages)
     sort(p_s_match.begin(), p_s_match.end(), sorter);
 
     vector<int> answer(N, 0);
+
     for (int i = 0; i < p_s_match.size(); ++i)
         answer[i] = p_s_match[i].first + 1;
 

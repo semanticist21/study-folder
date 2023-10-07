@@ -14,21 +14,17 @@ int solution(vector<vector<int>> board, vector<int> moves)
             if (line[move - 1] != 0)
             {
                 int *doll = &line[move - 1];
-                if (!dolls.empty() && dolls.back() == *doll)
-                {
+
+                if (!dolls.empty() && dolls.back() == *doll && ++total)
                     dolls.pop_back();
-                    total += 2;
-                }
                 else
-                {
                     dolls.emplace_back(*doll);
-                }
 
                 *doll = 0;
                 break;
             }
 
-    return total;
+    return total * 2;
 }
 
 int main()
