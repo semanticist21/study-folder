@@ -8,19 +8,29 @@ using namespace std;
 string solution(string s, int n)
 {
     for (char &c : s)
-        if (!(c ^ ' '))
+    {
+        int r = c + n;
+        if (isspace(c))
             continue;
-        else if (!isalpha(c + n))
-            c -= 'z' - 'a' - n + 1;
+        else if (isupper(c))
+        {
+            if (r > 'Z')
+                r -= 26;
+        }
         else
-            c += n;
+        {
+            if (r > 'z')
+                r -= 26;
+        }
+        c = r;
+    }
 
     return s;
 }
 
 int main()
 {
-    auto rs = solution("ZZ   aK", 25);
+    auto rs = solution("fghizk", 25);
     cout << rs << endl;
     return 0;
 }
