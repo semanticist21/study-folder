@@ -4,7 +4,6 @@
 
 using namespace std;
 
-// working on
 string solution(string s, int n)
 {
     for (char &c : s)
