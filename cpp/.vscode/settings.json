@@ -62,7 +62,9 @@
     "regex": "cpp",
     "stack": "cpp",
     "deque": "cpp",
-    "ranges": "cpp"
+    "ranges": "cpp",
+    "bitset": "cpp",
+    "span": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
