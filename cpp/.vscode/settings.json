@@ -64,7 +64,8 @@
     "deque": "cpp",
     "ranges": "cpp",
     "bitset": "cpp",
-    "span": "cpp"
+    "span": "cpp",
+    "queue": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "editor.formatOnSave": false
