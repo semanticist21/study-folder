@@ -5,12 +5,16 @@ using namespace std;
 
 int solution(vector<int> order)
 {
-    vector<int> subs;
-    int lastest_target = 1;
+    vector<int> prepared;
 
-    for (const int &parcel : order)
-    {
+    int last_parcel_tgt = 1;
+    int cnt = 0;
+
+    while(true){
+        
     }
+
+    return cnt = 0;
 }
 
 int main()
