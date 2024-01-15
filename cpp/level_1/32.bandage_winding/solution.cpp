@@ -17,7 +17,6 @@ int solution(vector<int> bandage, int health, vector<vector<int>> attacks)
 
         int gap = atk_time - last_atk_time;
 
-
         health += (gap-1) * bandage[1];
         health += (gap-1) / bandage[0] * bandage[2];
 
