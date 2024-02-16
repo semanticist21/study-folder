@@ -52,6 +52,7 @@ int solution(int n, int k)
     for (const long long num : nums)
     {
         if(num == 1) continue;
+        
 
         int limit = sqrt(num);
         int start = 2;

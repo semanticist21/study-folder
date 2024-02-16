@@ -1,9 +1,7 @@
+mod easy;
+
 fn main() {
-    println!("Hello, world!");
-}
+    let rs = easy::a1_invert_int_32::reverse_i32(322);
 
-fn test_function(input: i32) {
-    println!("test function");
+    println!("rs: {}", rs);
 }
-
-c
