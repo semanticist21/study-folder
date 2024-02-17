@@ -1,7 +1,7 @@
 mod easy;
 
 fn main() {
-    let rs = easy::a1_invert_int_32::reverse_i32(322);
+    let rs = easy::e2_atoi::my_atoi("   42  ".to_string());
 
     println!("rs: {}", rs);
 }
