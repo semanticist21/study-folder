@@ -1,4 +1,4 @@
-pub fn reverse_i32(x: i32) -> i32 {
+pub fn _reverse_i32(x: i32) -> i32 {
     x.to_string()
         .chars()
         .filter(|c| !c.is_numeric())
