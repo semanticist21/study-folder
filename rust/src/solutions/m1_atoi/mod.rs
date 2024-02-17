@@ -68,7 +68,7 @@ pub fn my_atoi(s: String) -> i32 {
         .unwrap_or(0);
 
     let is_over = str.len() > 10;
-    let mut rs: i32;
+    let rs: i32;
 
     if is_neg {
         if -sliced_int < i32::min_value() as i64 || is_over {
