@@ -1,0 +1,15 @@
+C:\Users\seman\code\study_folder\CSharp_study\bin\Debug\net8.0\CSharp_study.exe
+C:\Users\seman\code\study_folder\CSharp_study\bin\Debug\net8.0\CSharp_study.deps.json
+C:\Users\seman\code\study_folder\CSharp_study\bin\Debug\net8.0\CSharp_study.runtimeconfig.json
+C:\Users\seman\code\study_folder\CSharp_study\bin\Debug\net8.0\CSharp_study.dll
+C:\Users\seman\code\study_folder\CSharp_study\bin\Debug\net8.0\CSharp_study.pdb
+C:\Users\seman\code\study_folder\CSharp_study\obj\Debug\net8.0\CSharp_study.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seman\code\study_folder\CSharp_study\obj\Debug\net8.0\CSharp_study.AssemblyInfoInputs.cache
+C:\Users\seman\code\study_folder\CSharp_study\obj\Debug\net8.0\CSharp_study.AssemblyInfo.cs
+C:\Users\seman\code\study_folder\CSharp_study\obj\Debug\net8.0\CSharp_study.csproj.CoreCompileInputs.cache
+C:\Users\seman\code\study_folder\CSharp_study\obj\Debug\net8.0\CSharp_study.sourcelink.json
+C:\Users\seman\code\study_folder\CSharp_study\obj\Debug\net8.0\CSharp_study.dll
+C:\Users\seman\code\study_folder\CSharp_study\obj\Debug\net8.0\refint\CSharp_study.dll
+C:\Users\seman\code\study_folder\CSharp_study\obj\Debug\net8.0\CSharp_study.pdb
+C:\Users\seman\code\study_folder\CSharp_study\obj\Debug\net8.0\CSharp_study.genruntimeconfig.cache
+C:\Users\seman\code\study_folder\CSharp_study\obj\Debug\net8.0\ref\CSharp_study.dll
