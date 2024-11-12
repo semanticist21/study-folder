@@ -37,6 +37,8 @@ public class Solution
             for (int j = 0; j < arr.GetLength(1); j++)
                 jaggedArray[i][j] = arr[i, j];
         }
+
+        Console.WriteLine(jaggedArray);
         return jaggedArray;
     }
 
